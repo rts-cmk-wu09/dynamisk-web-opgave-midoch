@@ -18,6 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
   });
 
+  document.querySelector(".facilities").innerHTML = `
+    <h2>${facilities.headline}</h2>
+    <div class="options">
+    ${facilities.options
+      .map(
+        (option) => `
+        <div class="option">
+        <img src="${option.icon}" alt="icon" />
+        <h3>${option.headline}</h3>
+        <p>${option.text}</p>
+        </div>
+        `
+      )
+      .join("")}
+    </div>
+    `;
+
   //eksempel på at udskrive alle overskrifter i services i konsollen:
   services.forEach((service) => console.log(service.headline));
 }); // DOMContentLoaded slut
