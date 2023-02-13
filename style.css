@@ -20,7 +20,6 @@
 }
 
 img {
-  width: 100%;
   height: auto;
   display: block;
 }
@@ -37,6 +36,7 @@ p {
 
 /* Service */
 .services {
+  max-width: 1240px;
   display: flex;
 }
 
@@ -45,4 +45,33 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
+}
+
+.service img {
+  width: 250px;
+  height: 180px;
+  align-self: flex-start;
+  margin-bottom: 84px;
+}
+
+.service h2 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.service p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+}
+
+.service a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f78065;
+  text-decoration: none;
 }
