@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   // slå dig løs her...
+
   document.querySelector(".hero").innerHTML = `
-    <img src="${hero.image}" alt="hero image" />
+  <img src="${hero.image}" alt="hero image" />
+    <div class="hero__container">
     <h1>${hero.headline}</h1>
     <p>${hero.copy}</p>
     <img src="${hero.icon}" alt="icon" />
+    </div>
     `;
 
   services.forEach((service) => {
@@ -30,6 +33,27 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>${option.text}</p>
         </div>
         `
+      )
+      .join("")}
+    </div>
+    `;
+
+  document.querySelector(".sites").innerHTML = `
+    <div class="sites__left">
+     <h2>${sites.headline}</h2>
+     <p>${sites.text}</p>
+    <button>${sites.btnicon}</button>
+    </div>
+    <div class="places">
+    ${sites.places
+      .map(
+        (place) => `
+            <div class="place">
+            <img src="${place.img}" alt="place image" />
+            <h3>${place.name}</h3>
+            <p>${place.city}</p>
+            </div>
+            `
       )
       .join("")}
     </div>
