@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // slå dig løs her...
 
+  // Hero Section //
   document.querySelector(".hero").innerHTML = `
   <img src="${hero.image}" alt="hero image" />
     <div class="hero__container">
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
+  // Service Section //
   services.forEach((service) => {
     document.querySelector(".services").innerHTML += `
         <div class="service">
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
   });
 
+  // Facilities Section //
   document.querySelector(".facilities").innerHTML = `
     <h2>${facilities.headline}</h2>
     <div class="options">
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
+  // Sites Section //
   document.querySelector(".sites").innerHTML = `
     <div class="sites__left">
      <h2>${sites.headline}</h2>
@@ -59,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
+  // Advantages Section //
   document.querySelector(".advantages").innerHTML = `
     <h2 class="advantages__heading">Our Advantages</h2>
     <div class="advantage__container">
@@ -73,6 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
     <p>${advantage.text}</p>
     `;
   });
+
+  // Hero Section //
 
   /*  let body = document.querySelector("body");
   let footer = document.createElement("footer");
@@ -99,6 +106,20 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("")}
     `;
   });
+
+  // Footer__nav Section //
+  document.querySelector(".footer__nav").innerHTML = `
+  <div class="footer__copyright">${footer__nav[0].headline}</div>
+  <ul class="footer__options">
+    ${footer__nav[0].options
+      .map(
+        (option) => `
+      <li class="footer__option">${option.text}</li>
+    `
+      )
+      .join("")}
+  </ul>
+`;
 
   //eksempel på at udskrive alle overskrifter i services i konsollen:
   services.forEach((service) => console.log(service.headline));
