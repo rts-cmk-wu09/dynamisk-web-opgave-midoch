@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="hero__container">
     <h1>${hero.headline}</h1>
     <p>${hero.copy}</p>
-    <img src="${hero.icon}" alt="icon" />
+    <button class="hero__btn"><img src="${hero.icon}">Start</button>
     </div>
     `;
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="sites__left">
      <h2>${sites.headline}</h2>
      <p>${sites.text}</p>
-    <button>${sites.btnicon}</button>
+    <button><img src="${sites.btnicon}">Start</button>
     </div>
     <div class="places">
     ${sites.places
@@ -58,6 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("")}
     </div>
     `;
+
+  document.querySelector(".advantages").innerHTML = `
+    <h2>Our advantages</h2> `;
+
+  advantages.forEach((advantage) => {
+    document.querySelector(".advantages").innerHTML += `
+      <div class="advantage">
+      <img src="${advantage.icon}" alt="icon" />
+      <p>${advantage.text}</p>
+      </div>
+      `;
+  });
 
   //eksempel på at udskrive alle overskrifter i services i konsollen:
   services.forEach((service) => console.log(service.headline));
