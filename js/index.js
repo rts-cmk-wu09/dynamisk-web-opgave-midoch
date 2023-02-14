@@ -74,6 +74,32 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   });
 
+  /*  let body = document.querySelector("body");
+  let footer = document.createElement("footer");
+  body.append(footer);
+ */
+  document.querySelector("footer").innerHTML = `
+    <div class="footer__options">
+    <h2>${footer.headline}</h2>
+    <p>${footer.text}</p>
+    </div>
+    <div class="footer__options__container">
+    </div>
+    `;
+
+  footer.options.forEach((option) => {
+    document.querySelector(".footer__options__container").innerHTML += `
+    <h3>${option.headline}</h3>
+    ${option.options__links
+      .map(
+        (link) => `
+        <a href="#">${link.link}</a>
+        `
+      )
+      .join("")}
+    `;
+  });
+
   //eksempel på at udskrive alle overskrifter i services i konsollen:
   services.forEach((service) => console.log(service.headline));
 }); // DOMContentLoaded slut
