@@ -45,6 +45,8 @@ img {
   font-family: "Merriweather", serif;
   font-size: 39px;
   font-weight: 700;
+  max-width: 521px;
+  margin-bottom: 1em;
 }
 
 .hero p {
@@ -52,6 +54,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   color: grey;
+  max-width: 515px;
 }
 
 .hero img {
@@ -62,8 +65,8 @@ img {
 .services {
   max-width: 1240px;
   display: flex;
-  margin-top: 128px;
-  margin-bottom: 253px;
+  margin-top: 350px;
+  margin-bottom: 250px;
 }
 
 .service {
@@ -159,6 +162,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   color: grey;
+  margin-bottom: 6em;
 }
 
 .sites button {
