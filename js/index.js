@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="hero__container">
     <h1>${hero.headline}</h1>
     <p>${hero.copy}</p>
-    <button class="hero__btn"><img src="${hero.icon}">Start</button>
+    <button class="hero__btn"><img src="${hero.icon}">Explore</button>
     </div>
     `;
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="sites__left">
      <h2>${sites.headline}</h2>
      <p>${sites.text}</p>
-    <button><img src="${sites.btnicon}">Start</button>
+    <button class="sites__btn"><img src="${sites.btnicon}">Start</button>
     </div>
     <div class="places">
     ${sites.places
@@ -60,15 +60,18 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
   document.querySelector(".advantages").innerHTML = `
-    <h2>Our advantages</h2> `;
+    <h2 class="advantages__heading">Our Advantages</h2>
+    <div class="advantage__container">
+    </div>
+    `;
 
   advantages.forEach((advantage) => {
-    document.querySelector(".advantages").innerHTML += `
-      <div class="advantage">
-      <img src="${advantage.icon}" alt="icon" />
-      <p>${advantage.text}</p>
-      </div>
-      `;
+    document.querySelector(".advantage__container").innerHTML += `
+    <div class="advantage">
+    <img src="${advantage.icon}" alt="icon" />
+    <h3>${advantage.headline}</h3>
+    <p>${advantage.text}</p>
+    `;
   });
 
   //eksempel på at udskrive alle overskrifter i services i konsollen:
