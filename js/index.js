@@ -79,12 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   });
 
-  // Hero Section //
+  // Footer Section //
 
-  /*  let body = document.querySelector("body");
-  let footer = document.createElement("footer");
-  body.append(footer);
- */
   document.querySelector("footer").innerHTML = `
     <div class="footer__options">
     <h2>${footer.headline}</h2>
@@ -96,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   footer.options.forEach((option) => {
     document.querySelector(".footer__options__container").innerHTML += `
+    <div class="footer__item">
     <h3>${option.headline}</h3>
     ${option.options__links
       .map(
@@ -104,21 +101,23 @@ document.addEventListener("DOMContentLoaded", function () {
         `
       )
       .join("")}
+    </div>
     `;
   });
 
   // Footer__nav Section //
   document.querySelector(".footer__nav").innerHTML = `
-  <div class="footer__copyright">${footer__nav[0].headline}</div>
-  <ul class="footer__options">
+  <div class="footer__copyright">${footer__nav[0].headline}
+  <ul class="footer__option">
     ${footer__nav[0].options
       .map(
         (option) => `
-      <li class="footer__option">${option.text}</li>
+      <li class="footer__nav__option">${option.text}</li>
     `
       )
       .join("")}
   </ul>
+  </div>
 `;
 
   //eksempel på at udskrive alle overskrifter i services i konsollen:
