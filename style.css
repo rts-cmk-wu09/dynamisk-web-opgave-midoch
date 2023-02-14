@@ -61,6 +61,21 @@ img {
   max-width: 1440px;
 }
 
+.hero__span {
+  color: #f78065;
+}
+
+.hero__btn {
+  color: #ffffff;
+  font-size: 20px;
+  background: #f78065;
+
+  text-decoration: none;
+  padding: 20px 0;
+  display: block;
+  margin-top: 1em;
+}
+
 /* Service */
 .services {
   max-width: 1240px;
