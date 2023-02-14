@@ -120,9 +120,6 @@ img {
 
 /* facilities */
 
-.facilities {
-}
-
 .facilities h2 {
   font-family: "Merriweather", serif;
   font-size: 36px;
@@ -256,4 +253,72 @@ img {
   font-size: 14px;
   font-weight: 500;
   color: grey;
+}
+
+/* Footer */
+
+.footer,
+.footer__nav {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+
+.footer h2 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.footer p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.footer__options {
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__options__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.footer__item h3 {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.footer__item a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.footer__copyright {
+  display: flex;
+  color: gray;
+}
+
+.footer__option {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 50px;
 }
