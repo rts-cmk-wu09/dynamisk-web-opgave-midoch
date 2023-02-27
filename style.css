@@ -1,0 +1,324 @@
+/* CSS Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+/* font-family: 'Merriweather', serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+/* Hero */
+
+.hero__container {
+  position: absolute;
+  top: 340px;
+  background-color: #ffffff;
+  max-width: 740px;
+  height: 540px;
+  left: 50px;
+  padding: 70px 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Merriweather", serif;
+  font-size: 39px;
+  font-weight: 700;
+  max-width: 521px;
+  margin-bottom: 1em;
+}
+
+.hero p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+  max-width: 515px;
+}
+
+.hero img {
+  max-width: 1440px;
+}
+
+.hero__span {
+  color: #f78065;
+}
+
+.hero__btn {
+  color: #ffffff;
+  font-size: 20px;
+  background: #f78065;
+  padding: 10px 50px;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+/* Service */
+.services {
+  max-width: 1240px;
+  display: flex;
+  margin-top: 350px;
+  margin-bottom: 250px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.service img {
+  width: 250px;
+  height: 180px;
+  align-self: flex-start;
+  margin-bottom: 84px;
+}
+
+.service h2 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.service p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+}
+
+.service a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f78065;
+  text-decoration: none;
+}
+
+/* facilities */
+
+.facilities h2 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 108px;
+}
+
+.facilities .options {
+  display: flex;
+  justify-content: space-between;
+  gap: 65px;
+  margin-bottom: 64px;
+}
+.facilities img {
+  margin-bottom: 64px;
+}
+
+.facilities h3 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.facilities p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+  margin-bottom: 263px;
+}
+
+/* Sites */
+
+.sites {
+  max-width: 1240px;
+  display: flex;
+  gap: 127px;
+  margin-bottom: 344px;
+}
+
+.sites h2 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sites p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: grey;
+  margin-bottom: 6em;
+}
+
+.sites__btn {
+  color: #ffffff;
+  font-size: 20px;
+  background: #f78065;
+  padding: 10px 20px;
+  max-width: 250px;
+  text-decoration: none;
+}
+
+.sites__left {
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.places {
+  max-width: 75%;
+  display: flex;
+  gap: 49px;
+}
+
+.place img {
+  width: 230px;
+  height: 480px;
+}
+
+.place h3 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.place p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+}
+
+/* Advantage */
+
+.advantage__container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.advantages__heading {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 108px;
+}
+
+.advantage img {
+  width: 32px;
+  height: 32px;
+}
+
+.advantage h3 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+
+.advantage p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+}
+
+/* Footer */
+
+.footer,
+.footer__nav {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+
+.footer h2 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.footer p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.footer__options {
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__options__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.footer__item h3 {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.footer__item a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.footer__copyright {
+  display: flex;
+  color: gray;
+}
+
+.footer__option {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 50px;
+}
